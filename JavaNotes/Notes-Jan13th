@@ -1,0 +1,80 @@
+- Apply lessons learnt in project 1 to next project
+- First project - independent, second - group
+
+Java
+- Architecture neutral
+	Java compiles to bytecode. Object file format architecture neutral
+- Portable
+	int is signed 2's complement
+	float is 32 bit IEEE floating point
+
+- Interpreted, Highe Performance
+	Runtime environment is interpreted
+	development process faster
+	byecodes designed with on the fly compilation in mind.Putting code gen in dyna
+	High performance
+- Java performance
+	Speed of executing Java bytecode
+	Libraries loaded dynamically
+	Runtime enviornment that has to convert bytecode that are achitecture neutral to native (biggest cost in runtime environment)
+	Operating System - Environment on which java virtual machine runs
+- Multithreaded
+	Monitors support in language
+	Thread creation through APIs
+	Xerox Cedar/Mesa influence
+- Distributed
+	Mainly due to support in APIs and concept of streams. A file system stream or a network stream is undistinguishable.
+- Dynamic
+	Dynamic loading with Programmbale Class Loaders
+	Very late binding
+	Robust component model due to important solution to the fragile base class problem.
+
+Late binding
+	Offests are not calculated until load time(not compile time)
+	Fields and method references symbolically in the bytecode
+	Less efficient buy JIT compiles optimize
+	Leads to robust component model and hence popularity of Beans etc.
+
+- Java Environemnt
+ JavaS2E
+	JRE(Java Runtime Environment)
+		- Ability to run classes
+		- Everythingyou need to deploy Java
+	JDK (Java Development Kit)
+		- Ability to compile, debug Java
+		- Look at class files
+
+Various other environments
+	Development Enviroment
+	Java E2E
+
+
+jvm is native, bytecode that run on it are portable
+- Class Loader builds class structure in memory.
+- Bytecode Verification makes sure that the class is following the rules set in the language. If someone modifies class file and adds a bug, will check and disallow access.
+- JIT compiler removes loop for incrementing and just has prnit 5 times, improves performance of bytecode executed. public, private, access to methods, private variables. JIT compiled gets rid of methods for eliminating instructions to improve speed. 
+
+Bytecode interpreter - Main component 
+Keeps tracks of instructions. User threads collaborate with OS and OS scheduler. User threads come and go. System thread example is garbage collector. Method area is part of a memory that will be kept for instance constant pool where constants be kept. Static - class, methods, class. Static is declared once and made global in its living context. Java class is always static - have to load a class to write a program.error if you define it.
+Heap allocated by VM at startup. Every thread has its own stack. 
+
+JNI - middleware inside JVM for it to interact with operating system. JVM on top of operating system, its living environment is in the operating system. JNI is only systemic, not application. Draw winodw, create socket, create a thread, all examples of native call.
+
+Bytecode compiler - javac,jikes,jasmineetc
+Decompiler, Bytecode disassembler - javap, mocha
+Obfuscator, Bytecode Optimizer - creama, Dash0
+Obfuscation is for security
+
+char 2 bytes
+Every class is self healing
+class - a blueprint of an object
+object - instance of a class 
+encapsulation of methods and data structures.
+
+methods define how
+object -> what and how
+       -> what --> self-contained and independent
+       -> how is done in methods
+       -> behavior --> is created in methods
+		   --> alter instance variable's value --> defines behavior
+
