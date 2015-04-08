@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/rchandra/AndroidStudioProjects/MortgageCalculator-master1/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/Users/rchandra/AndroidStudioProjects/MortgageCalculator-master1/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">Mortgage Calculator</string>
+    <string name="custom_amount">Custom Amount</string>
+    <string name="custom_payment_amount">Custom Payment Amount</string>
+    <string name="down_payment">Down Payment</string>
+    <string name="fifteen">15</string>
+    <string name="interest_rate">Interest Rate</string>
+    <string name="monthly_payment">Monthly Payment</string>
+    <string name="purchase_price">Purchase Price</string>
+    <string name="ten">10</string>
+    <string name="thirty">30</string>
+    <string name="twenty">20</string>
+    <string name="zero">0.00</string>
+    <!-- From: file:/Users/rchandra/AndroidStudioProjects/MortgageCalculator-master1/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+</resources>
